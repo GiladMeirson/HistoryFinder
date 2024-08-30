@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Events on This Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/240px-The_Blue_Marble_%28remastered%29.jpg">
+
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em>Enable Dark Mode</em>
+    </div>
+
+    <h1>Historical Events on This Day</h1>
+
+    <div id="calendar">
+        <div id="calendar-header">
+            <button id="prev-month">« Previous</button>
+            <h2 id="current-month"></h2>
+            <button id="next-month">Next »</button>
+        </div>
+        <div id="calendar-body"></div>
+    </div>
+
+    <div id="loading">
+        <div class="loader"></div>
+        <p>Loading events...</p>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
